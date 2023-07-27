@@ -8,6 +8,10 @@ import {
 } from "./components";
 
 export const Header = () => {
+
+  function scrollToForm() {
+    window.scrollTo(0, 3000);
+  }
   return (
     <HeaderSection>
       <HeaderContainer>
@@ -16,7 +20,9 @@ export const Header = () => {
           <h2>ONRC</h2>
         </LogoContainer>
         <LinksContainer>
-          <a href="">Certificat Constatator</a>
+          <p href="" onClick={scrollToForm}>
+            Certificat Constatator
+          </p>
           <a href="">Intrebari Frecvente</a>
           <a href="">Contact</a>
         </LinksContainer>

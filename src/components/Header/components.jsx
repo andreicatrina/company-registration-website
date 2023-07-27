@@ -38,6 +38,13 @@ export const LinksContainer = styled.div`
   align-items: center;
   gap: 12px;
 
+  p {
+    color: var(--fontColor1);
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+  }
+
   a {
     text-decoration: none;
     color: var(--fontColor1);
