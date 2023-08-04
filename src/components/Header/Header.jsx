@@ -6,25 +6,27 @@ import {
   LinksContainer,
   LogoContainer,
 } from "./components";
+import { Link } from "react-router-dom";
 
 export const Header = () => {
-
-  function scrollToForm() {
-    window.scrollTo(0, 3000);
+  function ScrollToContact() {
+    window.scrollTo(0, 4000);
   }
   return (
     <HeaderSection>
       <HeaderContainer>
-        <LogoContainer>
+        <Link to={"/"}>
           <h1>Certificat</h1>
           <h2>ONRC</h2>
-        </LogoContainer>
+        </Link>
         <LinksContainer>
-          <p href="" onClick={scrollToForm}>
+          {/* <p href="" onClick={scrollToForm}>
             Certificat Constatator
+          </p> */}
+          <Link to="/faq">Intrebari Frecvente</Link>
+          <p href="" onClick={ScrollToContact}>
+            Contact
           </p>
-          <a href="">Intrebari Frecvente</a>
-          <a href="">Contact</a>
         </LinksContainer>
       </HeaderContainer>
     </HeaderSection>

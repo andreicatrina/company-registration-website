@@ -1,4 +1,4 @@
-*{
+* {
   box-sizing: border-box;
 }
 
@@ -6,7 +6,6 @@ body {
   margin: 0;
   padding: 0;
 }
-
 
 :root {
   --background-color1: #d5e0e3;
@@ -17,24 +16,32 @@ body {
   --fontColor0: #fff;
   --fontColor1: #32363e;
   --fontColor2: #13044f;
-  --fontColor3:#000;
+  --fontColor3: #000;
 }
-
 
 h1 {
   font-size: 18px;
 }
 
-h2{
+h2 {
   font-size: 16px;
 }
 
-p,span {
+p,
+span {
   font-size: 14px;
 }
 
-h1,h2,p,span,a,button,input,label{
-  font-family: 'Roboto Serif', serif;
+h1,
+h2,
+h3,
+p,
+span,
+a,
+button,
+input,
+label {
+  font-family: "Roboto Serif", serif;
   margin: 0;
   padding: 0;
 }

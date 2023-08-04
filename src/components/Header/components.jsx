@@ -19,12 +19,15 @@ export const HeaderContainer = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-`;
 
-export const LogoContainer = styled.div`
+  a {
+    text-decoration: none;
+  }
+
   h1 {
     font-size: 20px;
-    padding-top: 12px;
+    padding-top: 4px;
+    color: var(--fontColor2);
   }
 
   h2 {
@@ -32,6 +35,8 @@ export const LogoContainer = styled.div`
     color: var(--buttons-color);
   }
 `;
+
+export const LogoContainer = styled.a``;
 
 export const LinksContainer = styled.div`
   display: flex;

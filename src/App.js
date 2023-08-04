@@ -1,17 +1,18 @@
+import { Route, Routes } from "react-router-dom";
 import "./App.css";
-import { Appointment } from "./components/Appointment/Appointment";
-import { Form } from "./components/Form/Form";
-import { Header } from "./components/Header/Header";
-import { LandingSection } from "./components/LandingSection/LandingSection";
+
+import { LandingPage } from "./pages/LandingPage/LandingPage";
+import { PrivacyPage } from "./pages/PrivacyPage/PrivacyPage";
+import { PageLayout } from "./pages/PageLayout/PageLayout";
+import { FaqPage } from "./pages/FaqPage/FaqPage";
 
 function App() {
   return (
-    <>
-      <Header />
-      <LandingSection />
-      <Appointment />
-      <Form />
-    </>
+    <Routes>
+      <Route path="/" element={<LandingPage />} />
+      <Route path="/privacy-policy" element={<PrivacyPage />} />
+      <Route path="/faq" element={<FaqPage />} />
+    </Routes>
   );
 }
 
