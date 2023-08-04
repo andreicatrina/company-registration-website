@@ -18,22 +18,26 @@ import booking22 from "../../Assets/booking22.png";
 import booking3 from "../../Assets/booking3.png";
 
 export const LandingSection = () => {
+  function scrollToForm() {
+    window.scrollTo(0, 1300);
+  }
   return (
     <LandingSectionParent>
       <LandingSectionContainer>
         <TextContainer>
           <ParagraphContainer>
-            <ParagraphText>Faceti o programare online</ParagraphText>
+            <ParagraphText>
+              Eliberare certificat constatator online
+            </ParagraphText>
           </ParagraphContainer>
           <h1>Rezolva rapid problema actelor</h1>
           <SpanContainer>
             <SpanText>
               Certificat-ONRC te scapa de alergatul dupa acte si te ajuta sa ai
-              grija de actele tale intr-un mod convenabil. Nici macar nu trebuie
-              sa ne suni, doar te programezi online{" "}
+              grija de actele tale intr-un mod convenabil
             </SpanText>
           </SpanContainer>
-          <button>Programare Online</button>
+          <button onClick={scrollToForm}>Certificat Constatator</button>
         </TextContainer>
         <ImagesContainer>
           <ContainerPicture1>
